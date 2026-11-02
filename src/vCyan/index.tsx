@@ -4,9 +4,7 @@ import Header from "./header.tsx";
 import {
   catalogCopy,
   categories,
-  games,
   getVisibleGames,
-  liveToolCount,
   type Category,
   type SortMode,
   allCategory,
