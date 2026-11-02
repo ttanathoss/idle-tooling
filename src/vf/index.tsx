@@ -4,6 +4,11 @@ import "./index.css";
 import forgeAndFortuneImage from "../assets/logos/forgeAndFortune.png";
 
 const variantBasePath = "/v-f";
+const publicBasePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+function getPublicPath(path: string) {
+  return `${publicBasePath}${path}` || "/";
+}
 
 function getEditorPath(game: string) {
   return `${variantBasePath}/editor?game=${encodeURIComponent(game)}`;
@@ -286,7 +291,7 @@ function Header({
     <header className="border-b border-white/10 bg-zinc-950/90 backdrop-blur-xl">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a
-          href={variantBasePath}
+          href={getPublicPath(variantBasePath)}
           onClick={(event) => {
             event.preventDefault();
             onNavigate(variantBasePath);
@@ -306,7 +311,7 @@ function Header({
           aria-label="Primary navigation"
         >
           <a
-            href={`${variantBasePath}/#games`}
+            href={getPublicPath(`${variantBasePath}/#games`)}
             onClick={(event) => {
               event.preventDefault();
               onNavigate(`${variantBasePath}/#games`);
@@ -316,17 +321,17 @@ function Header({
             Games
           </a>
           <a
-            href={editorPath}
+            href={getPublicPath(editorPath)}
             onClick={(event) => {
               event.preventDefault();
-              onNavigate(event.currentTarget.getAttribute("href") ?? "/");
+              onNavigate(editorPath);
             }}
             className="transition-colors hover:text-cyan-300"
           >
             Save editor
           </a>
           <a
-            href={`${variantBasePath}/#safety`}
+            href={getPublicPath(`${variantBasePath}/#safety`)}
             onClick={(event) => {
               event.preventDefault();
               onNavigate(`${variantBasePath}/#safety`);
@@ -337,10 +342,10 @@ function Header({
           </a>
         </nav>
         <a
-          href={editorPath}
+          href={getPublicPath(editorPath)}
           onClick={(event) => {
             event.preventDefault();
-            onNavigate(event.currentTarget.getAttribute("href") ?? "/");
+            onNavigate(editorPath);
           }}
           className="inline-flex items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-4 py-2 text-sm font-semibold transition hover:border-cyan-400/50 hover:text-cyan-300"
         >
