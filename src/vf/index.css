@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+.vf-app {
+  font-family: "Space Grotesk", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.vf-app .hero-grid {
+  background-image:
+    linear-gradient(rgba(63, 63, 70, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(63, 63, 70, 0.3) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 92%);
+}
+
+.vf-app .hero-glow {
+  background:
+    radial-gradient(
+      circle at 50% 12%,
+      rgba(34, 211, 238, 0.15),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 12% 70%,
+      rgba(251, 191, 36, 0.06),
+      transparent 24%
+    );
+  pointer-events: none;
+}
+
+.vf-app .game-card {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
