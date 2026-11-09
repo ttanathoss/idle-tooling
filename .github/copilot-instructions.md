@@ -36,3 +36,7 @@
 - Do not introduce lint warnings. The current baseline includes
   `react(set-state-in-effect)` in `src/forgeAndFortune/index.tsx`; avoid
   unrelated cleanup when working elsewhere.
+
+## Other
+
+- When reporting information to me, be extremely concise and sacrifice grammar for the sake of concision.

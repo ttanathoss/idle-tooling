@@ -1,0 +1,37 @@
+.theme-initial {
+}
+
+.theme-violet {
+}
+
+.theme-cobalt {
+}
+
+.theme-teal {
+}
+
+.theme-crimson {
+}
+
+.theme-orangeViolet {
+}
+
+.theme-violetLime {
+}
+
+.theme-hacker {
+}
+
+.theme-multiAccent {
+  --bg: #080c14;
+  --panel: #101722;
+  --panel-2: #172131;
+  --line: #263349;
+  --muted: #8a909c;
+  --primary: #4c8dff;
+  --primary-2: #72a7ff;
+  --signal: #ff5d73;
+  --mint: #48d7a2;
+  --violet: #a78bfa;
+  --color: #f5f6f7;
+}

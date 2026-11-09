@@ -32,7 +32,17 @@ const versions = [
     href: "/v-f",
     preview: "from-cyan-400/25 via-[#10171A] to-[#09090B]",
     accent: "bg-amber-300",
-    badge: "IDLETUNE / SAVE STUDIO",
+    badge: "FIGMA",
+  },
+  {
+    number: "043",
+    name: "V-F",
+    subtitle: "9 color variants by figma",
+    description: "Play-around with figma make - one design, 9 color variants.",
+    href: "/v-f2",
+    preview: "from-fuchsia-400/25 via-[#10171A] to-lime-400/25",
+    accent: "bg-lime-300",
+    badge: "FIGMA 2",
   },
 ];
 

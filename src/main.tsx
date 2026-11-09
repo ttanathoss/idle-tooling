@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.tsx";
 import ForgeAndFortune from "./forgeAndFortune/index.tsx";
 import VF from "./vf/index.tsx";
+import VF2 from "./vf2/index.tsx";
 import VViolet from "./vViolet/index.tsx";
 import VCyan from "./vCyan/index.tsx";
 import CookieClickerEditor from "./vCyan/CookieClickerEditor.tsx";
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")!).render(
           element={<CookieClickerEditor />}
         />
         <Route path="/v-f/*" element={<VF />} />
+        <Route path="/v-f2/*" element={<VF2 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
